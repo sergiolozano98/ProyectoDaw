@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `preguntas` (
 
 -- Volcando datos para la tabla datame.preguntas: ~6 rows (aproximadamente)
 /*!40000 ALTER TABLE `preguntas` DISABLE KEYS */;
-REPLACE INTO `preguntas` (`idPregunta`, `pregunta`) VALUES
+INSERT INTO `preguntas` (`idPregunta`, `pregunta`) VALUES
 	(1, '¿Que edad buscas?'),
 	(2, '¿Que buscas?'),
 	(3, '¿Orientación sexual?'),
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `total` (
 
 -- Volcando datos para la tabla datame.total: ~18 rows (aproximadamente)
 /*!40000 ALTER TABLE `total` DISABLE KEYS */;
-REPLACE INTO `total` (`idUsuario`, `idPregunta`, `Respuesta`) VALUES
+INSERT INTO `total` (`idUsuario`, `idPregunta`, `Respuesta`) VALUES
 	(2, 1, 'Entre 18 y 25'),
 	(2, 2, 'Relacion seria'),
 	(2, 3, 'Homosexual'),
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 -- Volcando datos para la tabla datame.usuarios: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-REPLACE INTO `usuarios` (`id`, `usuario`, `nombre`, `apellidos`, `edad`, `email`, `pass`) VALUES
+INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `apellidos`, `edad`, `email`, `pass`) VALUES
 	(1, 'Pepe9', 'Pepe', 'jajas', 24, 'jsjsj', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
 	(2, 'Juanito97', 'aadasd', 'asdasdas', 22, 'asdasdasd', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
 	(3, 'Sergio9', 'Sergio', 'Lozano', 21, 'sergio11', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
