@@ -1,0 +1,19 @@
+{
+  //Atributos necesarios para la conexion
+  private $mysql_server="34.209.78.83";
+  private $mysql_login="administrador";
+  private $mysql_pass="datame2017";
+  private $db_name="datame";
+  //Conector
+  private $conexion;
+  //Propiedades para controlar errores
+  private $error=false;
+  private $error_msj="";
+  function __construct()
+  {
+      $this->conexion = new mysqli($this->mysql_server, $this->mysql_login, $this->mysql_pass, $this->db_name);
+      if ($this->conexion->connect_errno) {
+        $this->error=true;
+        $this->error_msj="No se ha podido realizar la conexion a la bd. Revisar base de datos o parámetros";
+      }
+  }
