@@ -1,5 +1,13 @@
 form{
   padding: 20px 0px 0px 30px;   /* margen con valores: arriba - derecha - abajo - izquierda */
 font-family:verdana,arial;
-font-size:9pt; 
+font-size:9pt;
+}
+body{
+  border: 1px solid #7DA5E0;
+  padding: 10px;
+  margin: 10px;
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 }

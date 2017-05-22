@@ -41,16 +41,16 @@
   </body>
 
   <footer id="footer1">
-    <img src="banner.jpg" alt="100">
+    <img src="fotosMiaKhalifa/banner.jpg" alt="100">
 
 
   </footer>
 
 
   <footer id="footer2">
-    <img class="iconfacebook" src="fboo.jpg" alt="">
-    <img class="icontwitter" src="socialtwitter.png" alt="">
-    <img class="icongoogle" src="google.jpg" alt="">
+    <img class="iconfacebook" src="fotosMiaKhalifa/fboo.jpg" alt="">
+    <img class="icontwitter" src="fotosMiaKhalifa/socialtwitter.png" alt="">
+    <img class="icongoogle" src="fotosMiaKhalifa/google.jpg" alt="">
   </footer>
 
 

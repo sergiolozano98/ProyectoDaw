@@ -1,0 +1,26 @@
+form {
+margin: 0 auto;
+width: 800px;
+}
+
+.pregresp {
+border: 1px solid #7DA5E0;
+padding: 10px;
+margin: 10px;
+font-family: Arial, Verdana, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: bold;
+}
+
+
+.button {
+margin-left: 10px;
+}
+
+.pregunta {
+color: #8DA5E1;
+}
+
+.respuestas {
+color: #000000;
+}
