@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `preguntas` (
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- Volcando datos para la tabla datame.preguntas: ~6 rows (aproximadamente)
+DELETE FROM `preguntas`;
 /*!40000 ALTER TABLE `preguntas` DISABLE KEYS */;
 INSERT INTO `preguntas` (`idPregunta`, `pregunta`) VALUES
 	(1, '¿Que edad buscas?'),
@@ -40,32 +41,25 @@ CREATE TABLE IF NOT EXISTS `total` (
   `idPregunta` int(11) NOT NULL,
   `Respuesta` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
   PRIMARY KEY (`idUsuario`,`idPregunta`),
-  KEY `FK__preguntas` (`idPregunta`),
-  CONSTRAINT `FK_total_preguntas` FOREIGN KEY (`idPregunta`) REFERENCES `preguntas` (`idPregunta`),
-  CONSTRAINT `FK_total_usuarios` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`)
+  KEY `FK__preguntas` (`idPregunta`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
--- Volcando datos para la tabla datame.total: ~18 rows (aproximadamente)
+-- Volcando datos para la tabla datame.total: ~12 rows (aproximadamente)
+DELETE FROM `total`;
 /*!40000 ALTER TABLE `total` DISABLE KEYS */;
 INSERT INTO `total` (`idUsuario`, `idPregunta`, `Respuesta`) VALUES
-	(2, 1, 'Entre 18 y 25'),
-	(2, 2, 'Relacion seria'),
-	(2, 3, 'Homosexual'),
-	(2, 4, 'CastaÃ±o'),
-	(2, 5, 'Vegano'),
-	(2, 6, 'si'),
-	(3, 1, 'Entre 18 y 25'),
-	(3, 2, 'Relacion seria'),
-	(3, 3, 'Bisexua'),
-	(3, 4, 'Rubio'),
-	(3, 5, 'Vegano'),
-	(3, 6, 'Otros'),
-	(4, 1, 'Mayores de 45'),
-	(4, 2, 'Relacion Relacion esporÃ¡dica'),
-	(4, 3, 'Bisexua'),
-	(4, 4, 'Otros'),
-	(4, 5, 'Vegano'),
-	(4, 6, 'Otros');
+	(9, 1, 'Entre 18 y 25'),
+	(9, 2, 'Otros'),
+	(9, 3, 'Homosexual'),
+	(9, 4, 'Rubio'),
+	(9, 5, 'Vegetariano'),
+	(9, 6, 'si'),
+	(10, 1, 'Entre 18 y 25'),
+	(10, 2, 'Otros'),
+	(10, 3, 'Homosexual'),
+	(10, 4, 'Rubio'),
+	(10, 5, 'Vegetariano'),
+	(10, 6, 'si');
 /*!40000 ALTER TABLE `total` ENABLE KEYS */;
 
 -- Volcando estructura para tabla datame.usuarios
@@ -77,16 +71,16 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `edad` int(11) NOT NULL,
   `email` varchar(50) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
   `pass` varchar(50) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
+  `rol` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
--- Volcando datos para la tabla datame.usuarios: ~4 rows (aproximadamente)
+-- Volcando datos para la tabla datame.usuarios: ~2 rows (aproximadamente)
+DELETE FROM `usuarios`;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `apellidos`, `edad`, `email`, `pass`) VALUES
-	(1, 'Pepe9', 'Pepe', 'jajas', 24, 'jsjsj', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
-	(2, 'Juanito97', 'aadasd', 'asdasdas', 22, 'asdasdasd', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
-	(3, 'Sergio9', 'Sergio', 'Lozano', 21, 'sergio11', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8'),
-	(4, 'Fran99', 'fran', 'asjds', 22, 'sushfranciscquito', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8');
+INSERT INTO `usuarios` (`id`, `usuario`, `nombre`, `apellidos`, `edad`, `email`, `pass`, `rol`) VALUES
+	(9, 'Pepe9', 'sada', 'asd', 21, 'asd', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8', NULL),
+	(10, 'juanito', 'sadasd', 'asdasdas', 23, 'asdasdasdsad', '86f7e437faa5a7fce15d1ddcb9eaeaea377667b8', NULL);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
