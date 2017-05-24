@@ -1,0 +1,107 @@
+  body{
+    background-color: white;
+    text-align: center;
+    font-family:'Quicksand',sans-serif;
+    font-size:15px;
+    background-image:url("Fondo.png");
+    background-repeat:no-repeat;
+     background-size: 1500px 850px;
+     font-weight: bold;
+
+
+  }
+  
+
+
+  .img{
+    padding right: 10px;
+    padding-top: 20px;
+  }
+
+  .textoA{
+    float: left;
+    padding-left: 200px;
+    padding-top: 22px;
+    font-family: quicksand,sans-serif;
+  }
+   .textoB{
+    float: right;
+    padding-right: 200px;
+    padding-top: 22px;
+    font-family: quicksand,sans-serif;
+  }
+
+  
+#Regist{
+  background: #66cfe4;
+  background-image: -webkit-linear-gradient(top, #66cfe4, #2980b9);
+  background-image: -moz-linear-gradient(top, #66cfe4, #2980b9);
+  background-image: -ms-linear-gradient(top, #66cfe4, #2980b9);
+  background-image: -o-linear-gradient(top, #66cfe4, #2980b9);
+  background-image: linear-gradient(to bottom, #66cfe4, #2980b9);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 23px;
+  font-family: 'quicksand',sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+
+.footer {
+  
+  font-family:quicksand,sans-serif;
+  padding: 1em;
+  background-color: #efefef;
+  text-align: center;
+  border-top:2px solid;
+  border-color:#66cfe4;
+  border-style:solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+}
+
+#twitter{
+  width: 50px;
+  height: 50px;
+  float:right;
+  padding-right: 30px;
+}
+
+#facebook{
+  width: 50px;
+  height: 50px;
+  float:right;
+  padding-right: 17px;
+}
+
+#instagram{
+  width: 50px;
+  height: 50px;
+  float:right;
+  padding-right: 17px;
+}
+
+
+#footerizq{
+  width: 100px;
+  height: 50px;
+  float:left;
+}
+
+#powered{
+   float: center;
+   color:#ff1276;
+   padding-left: 220px;
+}
+.buscarpersonas{
+  padding-top: 425px;
+}
+
+
+
+
