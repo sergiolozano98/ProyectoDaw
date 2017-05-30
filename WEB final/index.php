@@ -13,16 +13,16 @@
 <br>
 <nav>
   <a href="login.php">INICIO</a> |
-  <a href="sobremi.php">SOBRE NOSOTROS</a> |
+  <a href="sobrenosotros.php">SOBRE NOSOTROS</a> |
   <a href="contactanos.php">CONTACTANOS</a> |
-  
+
 </nav>
 <br>
 <br>
 
      <fieldset>
       <legend>Login</legend>
-    
+
       <form method="post" action="index.php">
         <label for="fname">Usuario</label>
         <input type="text"  name="usuario" id="Usu">
@@ -33,28 +33,27 @@
         <label for="pass0">Contraseña</label>
         <input type="password"  name="pass0" id="pas">
         </fieldset>
-      
+
         <br>
         <br>
         <input type="hidden" name="accion" value="login">
         <br>
         <input type="submit" value="login" id="Regist">
-        <br>
-        <br>
+
         <a href="registro.php"><input type="button" value="registrar" id="Regist" /></a>
       </form>
       <br>
       <br>
       <br>
-      
-  
+
+
 
 </body>
 
 <div class="footer">
   <a href="https://twitter.com/datame75"><img id="twitter" src="socialtwitter.png"></a>
   <a href="https://www.facebook.com/Datame-143058519571871/?ref=aymt_homepage_panel"><img id="facebook" src="socialfacebook.png"></a>
-  <a href="https://www.instagram.com/datame2017/"><img id="instagram" src="socialinstagram.png">
+  <a href="https://www.instagram.com/datame2017/"><img id="instagram" src="socialinstagram.png"></a>
   <img id="footerizq" src="DataMELetras.png">
   <p id="powered">Made by 1º Daw Team Datame</p>
   </div>
@@ -81,6 +80,3 @@
       }
     }
      ?>
- 
-
-

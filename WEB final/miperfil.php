@@ -31,7 +31,7 @@ if($seguridad->getUsuario()==null){
      <br>
     <br>
 
-    
+
 
     <div class="textos">
     <div class="textoA">
@@ -61,7 +61,7 @@ if($seguridad->getUsuario()==null){
     <fieldset>
       <legend>Mis gustos:</legend>
       <form class="" action="index.html" method="post">
-      
+
     <?php
     foreach ($table as $fila) {
       echo "<input type='text' readonly name='fname' value='".$fila["Respuesta"]."'>";
@@ -90,8 +90,8 @@ if($seguridad->getUsuario()==null){
 
      <a href="busca.php"><input type="button" value="Buscar Persona" id="Regist" /></a>
     </div>
-    
-    
+
+
 
   </body>
 
@@ -99,7 +99,7 @@ if($seguridad->getUsuario()==null){
  <div class="footer">
   <a href="https://twitter.com/datame75"><img id="twitter" src="socialtwitter.png"></a>
   <a href="https://www.facebook.com/Datame-143058519571871/?ref=aymt_homepage_panel"><img id="facebook" src="socialfacebook.png"></a>
-  <a href="https://www.instagram.com/datame2017/"><img id="instagram" src="socialinstagram.png">
+  <a href="https://www.instagram.com/datame2017/"><img id="instagram" src="socialinstagram.png"></a>
   <img id="footerizq" src="DataMELetras.png">
   <p id="powered">Made by 1º Daw Team Datame</p>
   </div>

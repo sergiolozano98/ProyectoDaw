@@ -11,14 +11,16 @@ body{
      header{background-color: black;}
      body{color:#ff1276;
   margin: 0px 0px 0px 0px;
-  
+
 font-family:quicksand,sans-serif;
 
 background-image:url("Fondo.png");
     background-repeat:no-repeat;
      background-size: 100% 170%;
      font-weight: bold;}
-
+     input:hover {
+       border: 2px solid pink;
+     }
    #Regist{
   background: #66cfe4;
   background-image: -webkit-linear-gradient(top, #66cfe4, #2980b9);
@@ -36,7 +38,7 @@ background-image:url("Fondo.png");
   text-decoration: none;
 }
 .footer {
-  
+
   font-family:quicksand,sans-serif;
   padding: 1em;
   background-color: #efefef;
@@ -101,3 +103,6 @@ input {
   width: 300px;
 }
 
+input:hover {
+  border: 2px solid pink;
+}

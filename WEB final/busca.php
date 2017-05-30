@@ -29,18 +29,8 @@ if($seguridad->getUsuario()==null){
     </tr>
   </thead>
        <?php
-    $tabla=$usuario->mostrarRespuestas($_SESSION["id"]);
-
-
-
-      $Respuesta1= $tabla[0]["Respuesta"];
-      $Respuesta2= $tabla[1]["Respuesta"];
-      $Respuesta3= $tabla[2]["Respuesta"];
-      $Respuesta4= $tabla[3]["Respuesta"];
-      $Respuesta5= $tabla[4]["Respuesta"];
-      $Respuesta6= $tabla[5]["Respuesta"];
-
-      $tabla2=$usuario->Comprobarbusca("$Respuesta1","$Respuesta2","$Respuesta3","$Respuesta4","$Respuesta5","$Respuesta6");
+      $tabla=$usuario->mostrarRespuestas($_SESSION["id"]);
+      $tabla2=$usuario->Comprobarbusca($tabla[0]["Respuesta"],$tabla[1]["Respuesta"],$tabla[2]["Respuesta"],$tabla[3]["Respuesta"],$tabla[4]["Respuesta"],$tabla[5]["Respuesta"]);
       foreach ($tabla2 as $fila) {
         ?>
         <tr>
@@ -54,6 +44,6 @@ if($seguridad->getUsuario()==null){
     ?>
 
   </table>
-
+  <a href="miperfil.php"><input type="button" value="<- Volver a mi perfil" id="Regist" /></a>
   </body>
 </html>
